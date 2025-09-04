@@ -175,24 +175,13 @@
             <!-- Profile Picture Section -->
             <div id="profileWrapper" class="relative inline-block mb-6">
                 <div class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg bg-white flex items-center justify-center overflow-hidden">
-                    <img id="profileImage" class="w-full h-full object-cover rounded-full hidden" alt="Profile Picture">
-                    <div id="defaultIcon" class="text-gray-400">
-                        <span class="material-icons" style="font-size: 4rem;">person</span>
-                    </div>
+                <img id="profileImage" src="1718772339467.png" class="w-full h-full object-cover rounded-full" alt="Profile Picture">
                 </div>
             </div>
 
             <!-- Profile Controls -->
             <div class="mb-4 space-x-2">
                 <input type="file" id="imageUpload" accept="image/*" class="hidden">
-                <button id="uploadBtn" onclick="document.getElementById('imageUpload').click()" 
-                        class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-sm transition-colors">
-                    <span class="material-icons text-sm mr-1">upload</span>อัปโหลดรูป
-                </button>
-                <button id="saveBtn" onclick="saveProfile()" 
-                        class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm transition-colors">
-                    <span class="material-icons text-sm mr-1">save</span>บันทึก
-                </button>
             </div>
 
             <h1 class="text-4xl font-bold mb-2 fade-in-up">อมรเชษฐ์ ธนัชเดชสุธาทิพย์</h1>
@@ -318,7 +307,7 @@
                 <!-- Experience Section -->
                 <div id="experience" class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-xl font-bold text-blue-600 mb-4 flex items-center">
-                        <span class="material-icons mr-2">work_history</span>ประสบการณ์การทำงาน
+                        <span class="material-icons mr-2">work_history</span>ประสบการณ์การทำงาน/ฝึกงาน
                     </h2>
                     <div class="relative">
                         <div class="absolute left-3 top-0 bottom-0 w-0.5 bg-blue-200"></div>
@@ -507,7 +496,7 @@
                         <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
                             <span class="material-icons mr-2">folder</span>เอกสารและเกียรติบัตร
                         </h4>
-                        <a href="https://drive.google.com/drive/u/1/folders/1bjm89iVY7EMcxb5xSesWhqAJV90fMJsE" target="_blank" 
+                        <a href="https://drive.google.com/drive/folders/1bjm89iVY7EMcxb5xSesWhqAJV90fMJsE?usp=sharing" 
                            class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm">
                             <span class="material-icons mr-2 text-sm">description</span>ดูเอกสารใน Google Drive
                         </a>
@@ -520,8 +509,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-12 print-hidden">
         <div class="container mx-auto px-6 text-center">
-            <p class="mb-4">© 2024 อมรเชษฐ์ ธนัชเดชสุธาทิพย์ - พร้อมเริ่มงานใหม่</p>
-            <div class="flex justify-center space-x-6">
+            <p class="mb-4">© 2025 อมรเชษฐ์ ธนัชเดชสุธาทิพย์  <div class="flex justify-center space-x-6">
                 <a href="mailto:k.amornchest@gmail.com" class="hover:text-blue-400 transition-colors flex items-center">
                     <span class="material-icons mr-2 text-sm">email</span>k.amornchest@gmail.com
                 </a>
@@ -582,10 +570,9 @@
                 localStorage.setItem('profileImage', profileImage.src);
             }
             
-            // Hide save/upload buttons after saving (permanent)
+            // Hide save button after saving (permanent)
             setTimeout(() => {
                 document.getElementById('saveBtn').classList.add('hidden');
-                document.getElementById('uploadBtn').classList.add('hidden');
                 document.getElementById('imageUpload').disabled = true;
             }, 1000);
             
@@ -630,9 +617,8 @@
                 profileImage.classList.remove('hidden');
                 defaultIcon.classList.add('hidden');
                 
-                // Hide upload/save buttons permanently
+                // Hide save button permanently
                 document.getElementById('saveBtn').classList.add('hidden');
-                document.getElementById('uploadBtn').classList.add('hidden');
                 imageUpload.disabled = true;
             } else {
                 // Enable upload if no saved image
@@ -720,5 +706,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9796c55b329c7331',t:'MTc1NjkxODQ4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979a7c8bc72274d4',t:'MTc1Njk1NzQ0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
